@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Manajer Portofolio</h1>
+    <form id="add-asset-form">
+        <select id="asset-type">
+            <option value="stock">Saham</option>
+            <option value="crypto">Crypto</option>
+            <option value="cash">Cash</option>
+        </select>
+        <input type="text" id="asset-name" placeholder="Nama Aset (e.g., AAPL, BTC)">
+        <input type="number" id="asset-quantity" placeholder="Jumlah">
+        <button type="submit">Tambah Aset</button>
+    </form>
+    <button id="refresh-prices">Refresh Harga</button>
+    <button id="export-csv">Ekspor ke CSV</button>
+    <canvas id="portfolio-chart" width="400" height="200"></canvas>
+    <table id="portfolio-table">
+        <thead>
+            <tr>
+                <th>Tipe</th>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Harga Saat Ini</th>
+                <th>Nilai Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Total Portofolio: <span id="total-value">0</span></h2>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+form { margin-bottom: 20px; }
+input, select, button { margin: 5px; padding: 8px; }
+#portfolio-chart { margin: 20px 0; }
